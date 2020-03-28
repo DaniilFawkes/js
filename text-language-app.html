@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text areas JS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+
+        p {
+            margin-bottom:0;
+            text-align:left;
+            margin-left:6%;
+        }
+
+        textarea {
+            margin:auto;
+            width:90%;
+            height:150px;
+            margin-bottom:10px;
+            border-radius:10px
+        }
+    </style> 
+
+</head>
+
+<body style='text-align:center;'>
+    <div style='margin:auto;padding:0;max-width:600px;'>
+        <h1>Word Checker</h1>
+
+        <p>Enter the top words list</p>
+        <textarea id='t1' onkeyup="myFunction()"></textarea>
+
+        <p>Display extra words</p>
+        <textarea id='t2'></textarea>
+
+        <p>Enter the sentences</p>
+        <textarea id='t3' onkeyup="myFunction()"></textarea>
+
+        <p>Display translations</p>
+        <textarea id='t4'></textarea>
+
+    </div>
+
+<button onclick="searchFunction(); highlightFunction()">Search</button>
+</body>
+<script type="text/javascript" src="main.js"></script>
+</html>
